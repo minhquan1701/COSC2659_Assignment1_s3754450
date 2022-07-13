@@ -1,2 +1,2 @@
-# COSC2659_Assignment1_s3754450
+# Assigment 1 project for course COSC2659 - IOS Development
  
