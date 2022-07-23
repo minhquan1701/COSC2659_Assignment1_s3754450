@@ -8,8 +8,88 @@
 import SwiftUI
 
 struct DetailView: View {
+    var book = books[1]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            ZStack (alignment: .bottom) {
+                    Image(book.bookThumb)
+                        .resizable()
+                        .scaledToFit()
+                        
+//                        .overlay(
+//                            ZStack (alignment: .bottom) {
+//                                LinearGradient(
+//                                        gradient: Gradient(stops: [
+//                                            .init(color: .white, location: 0.2),
+//                                            .init(color: .white.opacity(0.3), location: 0.5)
+//                                        ]),
+//                                        startPoint: .bottom,
+//                                        endPoint: .top
+//                                    )
+//
+//
+//                                VStack {
+//                                    Text(book.bookTitle)
+//                                        .font(.system(size: 32))
+//                                        .fontWeight(.bold)
+//                                        .foregroundColor(Color("primary-800"))
+//
+//                                        .frame(maxWidth: .infinity, alignment: .leading)
+//                                        .padding(.horizontal,20)
+//
+//
+//                                    HStack (spacing: 12){
+//                                        BookTagView(text: book.bookAuthor, type: "Author")
+//                                        BookTagView(text: "Self-help", type: "Category")
+//
+//                                    }
+//                                    .frame(maxWidth: .infinity, alignment: .leading)
+//                                    .padding(.horizontal, 20)
+//                                }
+//                            }
+//
+//                        )
+                ZStack (alignment: .bottom) {
+                    LinearGradient(
+                            gradient: Gradient(stops: [
+                                .init(color: .white, location: 0.2),
+                                .init(color: .white.opacity(0.3), location: 0.5)
+                            ]),
+                            startPoint: .bottom,
+                            endPoint: .top
+                        )
+
+
+                    VStack {
+                        Text(book.bookTitle)
+                            .font(.system(size: 32))
+                            .fontWeight(.bold)
+                            .foregroundColor(Color("primary-800"))
+
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.horizontal,20)
+
+
+                        HStack (spacing: 12){
+                            BookTagView(text: book.bookAuthor, type: "Author")
+                            BookTagView(text: "Self-help", type: "Category")
+
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.horizontal, 20)
+                    }
+                }
+                    
+                
+            }
+            .frame(height: 400)
+            Spacer()
+            
+        
+            
+            
+        }
     }
 }
 

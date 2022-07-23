@@ -10,12 +10,13 @@ import SwiftUI
 struct BookSliderView: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: true){
-            HStack (spacing: 16) {
+            LazyHStack (spacing: 16) {
                 ForEach(books) { book in
-                    NavigationLink(destination: DetailView()) {
+                    NavigationLink(destination: DetailView(book: book)) {
                         BookCardView(book: book)
                     }
                 }
+            
             }
             .padding(EdgeInsets(top: 0, leading: 20, bottom: 40, trailing: 20) )
         }
