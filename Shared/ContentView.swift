@@ -66,8 +66,10 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("📚 My Book Wishlist")
+
+            
+
         }
-        .navigationViewStyle(StackNavigationViewStyle())
         
     }
     

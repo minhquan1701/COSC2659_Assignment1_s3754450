@@ -14,13 +14,20 @@ struct BookSliderView: View {
                 ForEach(books) { book in
                     NavigationLink(destination: DetailView(book: book)) {
                         BookCardView(book: book)
+                        
+                        
                     }
+                    .buttonStyle(PlainButtonStyle())
+                
+                    
+                    
                 }
             
             }
             .padding(EdgeInsets(top: 0, leading: 20, bottom: 40, trailing: 20) )
+            
         }
-        .navigationViewStyle(StackNavigationViewStyle())
+        
     }
 }
 

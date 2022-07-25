@@ -87,7 +87,7 @@
 			children = (
 				476FAAFD287EE5C500BE1C34 /* COSC2659_Assignment1_s3754450App.swift */,
 				476FAAFE287EE5C500BE1C34 /* ContentView.swift */,
-				4753BC482883B8F20088CE19 /* BookData.swift */,
+				47D49929288EBD0D005B5E81 /* Model */,
 				4753BC412883B70D0088CE19 /* Views */,
 				4753BC3E2883B50A0088CE19 /* Components */,
 				476FAAFF287EE5C600BE1C34 /* Assets.xcassets */,
@@ -110,6 +110,14 @@
 				476FAB0C287EE5C600BE1C34 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		47D49929288EBD0D005B5E81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4753BC482883B8F20088CE19 /* BookData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

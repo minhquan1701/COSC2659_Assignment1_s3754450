@@ -16,40 +16,6 @@ struct DetailView: View {
                     Image(book.bookThumb)
                         .resizable()
                         .scaledToFit()
-                        
-//                        .overlay(
-//                            ZStack (alignment: .bottom) {
-//                                LinearGradient(
-//                                        gradient: Gradient(stops: [
-//                                            .init(color: .white, location: 0.2),
-//                                            .init(color: .white.opacity(0.3), location: 0.5)
-//                                        ]),
-//                                        startPoint: .bottom,
-//                                        endPoint: .top
-//                                    )
-//
-//
-//                                VStack {
-//                                    Text(book.bookTitle)
-//                                        .font(.system(size: 32))
-//                                        .fontWeight(.bold)
-//                                        .foregroundColor(Color("primary-800"))
-//
-//                                        .frame(maxWidth: .infinity, alignment: .leading)
-//                                        .padding(.horizontal,20)
-//
-//
-//                                    HStack (spacing: 12){
-//                                        BookTagView(text: book.bookAuthor, type: "Author")
-//                                        BookTagView(text: "Self-help", type: "Category")
-//
-//                                    }
-//                                    .frame(maxWidth: .infinity, alignment: .leading)
-//                                    .padding(.horizontal, 20)
-//                                }
-//                            }
-//
-//                        )
                 ZStack (alignment: .bottom) {
                     LinearGradient(
                             gradient: Gradient(stops: [
@@ -84,13 +50,33 @@ struct DetailView: View {
                 
             }
             .frame(height: 400)
+            ScrollView {
+                VStack(alignment: .leading, spacing: 10){
+                    //Line Break
+                    Rectangle()
+                        .foregroundColor(Color("bg-grey"))
+                        .frame(maxWidth: .infinity, maxHeight: 1)
+                        .padding(.bottom, 20)
+                    
+                    Text("Description")
+                        .font(.system(size: 20))
+                        .fontWeight(.bold)
+                    Text(book.bookDesc)
+                        .foregroundColor(Color("grey-900"))
+                }
+                
+                .padding(.horizontal, 20)
+            .padding(.vertical, 40)
+            }
             Spacer()
             
         
             
             
         }
+        .navigationBarTitleDisplayMode(.inline)
     }
+        
 }
 
 struct DetailView_Previews: PreviewProvider {
