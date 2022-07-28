@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SearchView: View {
     @State private var bookName: String = ""
+    @State var searchQuery = ""
+    
     var body: some View {
         //Search box container
         HStack {
@@ -25,6 +27,7 @@ struct SearchView: View {
         }
         .padding(EdgeInsets(top: 28, leading: 20, bottom: 28, trailing: 20) )
     }
+    
 }
 
 struct SearchView_Previews: PreviewProvider {

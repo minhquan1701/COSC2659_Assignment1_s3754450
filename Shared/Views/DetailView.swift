@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DetailView: View {
-    var book = books[1]
+    var book = books[0] //default value
     
     var body: some View {
         VStack{
@@ -37,9 +37,9 @@ struct DetailView: View {
                             .padding(.horizontal,20)
 
 
-                        HStack (spacing: 12){
+                        HStack (spacing: 10){
                             BookTagView(text: book.bookAuthor, type: "Author")
-                            BookTagView(text: "Self-help", type: "Category")
+                            BookTagView(text: book.bookCategory, type: "Category")
 
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
