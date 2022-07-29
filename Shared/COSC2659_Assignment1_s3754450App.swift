@@ -11,7 +11,7 @@ import SwiftUI
 struct COSC2659_Assignment1_s3754450App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashView()
         }
     }
 }

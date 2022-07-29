@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		471E0603288BF87F00AE1F6C /* BookTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E0602288BF87F00AE1F6C /* BookTagView.swift */; };
+		473F3DEC28940EF6006097B7 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F3DEB28940EF6006097B7 /* SplashView.swift */; };
 		4753BC402883B6540088CE19 /* BookCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4753BC3F2883B6540088CE19 /* BookCardView.swift */; };
 		4753BC432883B76E0088CE19 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4753BC422883B76E0088CE19 /* DetailView.swift */; };
 		4753BC452883B82E0088CE19 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4753BC442883B82E0088CE19 /* SearchView.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		471E0602288BF87F00AE1F6C /* BookTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTagView.swift; sourceTree = "<group>"; };
+		473F3DEB28940EF6006097B7 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		4753BC3F2883B6540088CE19 /* BookCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCardView.swift; sourceTree = "<group>"; };
 		4753BC422883B76E0088CE19 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		4753BC442883B82E0088CE19 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				4753BC422883B76E0088CE19 /* DetailView.swift */,
+				473F3DEB28940EF6006097B7 /* SplashView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				4753BC472883B88E0088CE19 /* BookSliderView.swift in Sources */,
 				471E0603288BF87F00AE1F6C /* BookTagView.swift in Sources */,
 				476FAB0D287EE5C600BE1C34 /* COSC2659_Assignment1_s3754450App.swift in Sources */,
+				473F3DEC28940EF6006097B7 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

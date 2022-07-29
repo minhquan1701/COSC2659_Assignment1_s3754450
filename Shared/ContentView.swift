@@ -13,8 +13,9 @@
   Author: Hoang Minh Quan
   ID: s3754450
   Created  date: 13/07/2022
-  Last modified: dd/mm/yyyy (e.g. 05/08/2022)
-  Acknowledgement: Acknowledge the resources that you use here.
+  Last modified: 29/07/2022 (e.g. 05/08/2022)
+  Acknowledgement:
+    Splash screen inspiration: https://www.youtube.com/watch?v=0ytO3wCRKZU
 */
 
 import SwiftUI

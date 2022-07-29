@@ -42,8 +42,8 @@ struct BookCardView: View {
         }
         
         .frame(width: 210, height: 320)
-        .background(Color("primary-50")) //TODO: change this
-        .cornerRadius(6) //TODO: fix this
+        .background(Color("primary-50"))
+        .cornerRadius(6)
         .shadow(color: Color.black.opacity(0.12), radius: 16, x: 0,y: 8)
     }
 }
